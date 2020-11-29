@@ -10,6 +10,7 @@ from splinter import Browser
 import requests
 import pandas as pd
 from pprint import pprint
+import time
 
 
 # ### Step 1 - Scraping
@@ -35,6 +36,8 @@ def scrape():
 
     #open chromedriver browser
     browser.visit(url_text)
+
+    time.sleep(1)
 
 
     # In[4]:
@@ -92,6 +95,8 @@ def scrape():
     #open chromedriver browser
     browser.visit(image_url)
 
+    time.sleep(1)
+
 
     # In[30]:
 
@@ -106,13 +111,18 @@ def scrape():
     #click on "more info" to get to large size image
     browser.links.find_by_partial_text("more info").click()
 
+    #create a Beautiful Soup object 
+    html = browser.html
+    soup = BeautifulSoup(html, 'html.parser')
+
 
     # In[32]:
 
 
     #retrieve the image url for the full-size image
     img_results = soup.find("figure", class_="lede") 
-    img_jpg = img_results.find("a")
+    #img_jpg = img_results.find("a")
+    img_jpg = img_results.select_one("a")
     img_link = img_jpg["href"]
     #check results for img_link
     #print(img_link)
@@ -136,6 +146,8 @@ def scrape():
 
     #open chromedriver browser
     browser.visit(table_url)
+
+    time.sleep(1)
 
 
     # In[71]:
@@ -168,29 +180,31 @@ def scrape():
 
 
     #open chromedriver browser
-    browser.visit(hemi_url)
+    # browser.visit(hemi_url)
+
+    # time.sleep(1)
 
 
-    # In[57]:
+    # # In[57]:
 
 
-    browser.find_by_tag("h3").click()
+    # browser.find_by_tag("h3").click()
 
 
-    # In[58]:
+    # # In[58]:
 
 
-    #create a Beautiful Soup object 
-    html = browser.html
-    soup = BeautifulSoup(html, 'html.parser')
+    # #create a Beautiful Soup object 
+    # html = browser.html
+    # soup = BeautifulSoup(html, 'html.parser')
 
-    #scrape the title
-    title = soup.select_one("div.content h2").text
-    print(title)
+    # #scrape the title
+    # title = soup.select_one("div.content h2").text
+    # print(title)
 
-    #scrape the image url
-    image_url = soup.select_one("div.downloads a")["href"]
-    print(image_url)
+    # #scrape the image url
+    # image_url = soup.select_one("div.downloads a")["href"]
+    # print(image_url)
 
 
     # In[59]:
@@ -198,6 +212,8 @@ def scrape():
 
     #return to base url
     browser.visit(hemi_url)
+
+    time.sleep(1)
 
     html = browser.html
     soup = BeautifulSoup(html, 'html.parser')
@@ -226,8 +242,16 @@ def scrape():
     print(hemisphere_urls)
 
     mars_news = {
-
+        "news_title" : news_title, 
+        "news_p" : news_p, 
+        "featured_image_url" : featured_image_url,
+        "html_mars_table" : html_mars_table,
+        "hemisphere_urls": hemisphere_urls    
     }
 
+    #Close the browser after scraping
+    browser.quit()
+
+    #return results
     return mars_news
     
