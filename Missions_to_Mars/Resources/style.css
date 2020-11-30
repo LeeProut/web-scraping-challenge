@@ -1,5 +1,15 @@
 
-#feat-image {
-    width: 10%; 
-    height: 10%
+.feat-image {
+    width: 50%; 
+    height: 50%
 }
+
+/* .feat-image {
+    max-width: 100%; 
+    height: auto;
+} */
+
+h4 {
+    color: teal;
+}
+
