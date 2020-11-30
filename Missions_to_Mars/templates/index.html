@@ -8,6 +8,9 @@
         <title>Mars Web Scraping</title>
         <!--Bootstrap stylesheet-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <!--css stylesheet-->
+        <link rel="stylesheet" type="text/css" href="Resources/style.css">
     </head>
 
     <body>
@@ -25,7 +28,7 @@
           <div class="col-11">
             <h4>Latest Mars News</h4>
             <h6>{{ mars_news.news_title }}</h6>
-            <p>{{ mars_news.news_p }}</p>
+            <small>{{ mars_news.news_p }}</small>
           </div>
 
         <!--empty div for spacing-->
@@ -35,11 +38,17 @@
         
         <!--create div class for featured image-->
         <div class="row">
-            <div class="col-8">
+            <div class="col-3">
                 <h4>Featured Mars Image</h4>
-                
+                <img id="feat-image" src= {{ mars_news.featured_image_url }} />
             </div>
         </div>
+
+        <!--create div class for table-->
+        <div class="table-responsive-sm">
+            <table class="table table-striped table-bordered">
+            </table>
+        </div>       
         
         
         
