@@ -157,6 +157,9 @@ def scrape():
     mars_facts = pd.read_html(table_url)[0]
     mars_facts
 
+    #change column names and set index
+    mars_facts.columns = ["Description", "Mars"]
+    mars_facts.set_index("Description", inplace=True)
 
     # In[73]:
 
