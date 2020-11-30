@@ -164,7 +164,7 @@ def scrape():
     #export DataFrame to html
     html_mars_table = mars_facts.to_html()
     html_mars_table
-    pprint(html_mars_table)
+    #pprint(html_mars_table)
 
 
     # ### Mars Hemispheres
@@ -239,7 +239,7 @@ def scrape():
     # In[60]:
 
 
-    print(hemisphere_urls)
+    #print(hemisphere_urls)
 
     mars_news = {
         "news_title" : news_title, 
