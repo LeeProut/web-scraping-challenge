@@ -15,12 +15,15 @@ table {
     background-color: #f2f2f2;
   }
 
-  .hemi-image {
+.hemi-image {
     width: 80%;
     height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
-  .feat-image {
+.feat-image {
     width: 85%;
     height: 85%;
   }
