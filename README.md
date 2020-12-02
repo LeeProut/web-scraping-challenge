@@ -23,21 +23,22 @@ The Jupyter notebook was converted into a Python script that can be viewed [here
 
 Created an app using Flask, with code that can be viewed [here](https://github.com/LeeProut/web-scraping-challenge/blob/main/Missions_to_Mars/app.py). The root route queries the Mongo database and passes the Mars data into an [HTML template](https://github.com/LeeProut/web-scraping-challenge/blob/main/Missions_to_Mars/templates/index.html) to display on a webpage. The `/scrape` route imports the Python [script](https://github.com/LeeProut/web-scraping-challenge/blob/main/Missions_to_Mars/scrape_mars.py) and calls the scrape function to retrieve new data when the user clicks the "Scrape New Data" button on the page. 
 
-The finished product is interactive, with a clean design: 
+##### The finished product is interactive, with a clean design: 
 
 ![Mission to Mars](/Missions_to_Mars/images/MissiontoMars1.png)
 
 ![Mars Hemispheres Images](/Missions_to_Mars/images/MissiontoMars2.png)
 
-The design is responsive to screen size: 
-
-![Responsive Design Display](/Missions_to_Mars/images/MtoMresponsive1.png)
-
-The information updates with each click of the "Scrape New Data" button. The most striking retrieval is the "Featured Mars Image." 
+##### The information updates with each click of the "Scrape New Data" button. The most striking retrieval is the "Featured Mars Image." 
 
 
 **Featured Image retrieved** | **updated Featured Image**
 --------------------- | ---------------------
 ![Mission to Mars](/Missions_to_Mars/images/MissiontoMars1.png) | ![Mission to Mars](/Missions_to_Mars/images/MtoMFeatImg.png)
+
+##### The design is responsive to screen size: 
+
+![Responsive Design Display](/Missions_to_Mars/images/MtoMresponsive1.png)
+
 
 
