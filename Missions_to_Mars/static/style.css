@@ -1,14 +1,4 @@
 
-.feat-image {
-    width: 50%; 
-    height: 50%
-}
-
-/* .feat-image {
-    max-width: 100%; 
-    height: auto;
-} */
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -25,14 +15,13 @@ table {
     background-color: #f2f2f2;
   }
 
-/* h1 {
-    color: red;
-}
+  .hemi-image {
+    width: 80%;
+    height: 80%;
+  }
 
-h4 {
-    color: red;
-}
+  .feat-image {
+    width: 85%;
+    height: 85%;
+  }
 
-h6 {
-    color: orange; 
-}  */
