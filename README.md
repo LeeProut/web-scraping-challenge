@@ -5,6 +5,16 @@
 
 ---
 
+### Demo of web scraping: 
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://youtu.be/TfDrQTBJvY8" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+---
+
 ### Source sites: 
 * [NASA Mars News Site](https://mars.nasa.gov/news) with recent news items about Mars.
 * [NASA Space Images Site](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars) with Mars Images from the Jet Propulsion Laboratory at California Institute of Technology.
