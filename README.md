@@ -3,9 +3,9 @@
 * creating an app to display the data retrieved using MongoDB with Flask
 * end user can easily retrieve the latest information with a simple click
 
----
+<!------->
 
-### Demo of web scraping: 
+<!--### Demo of web scraping:-->
 
 <!-- blank line -->
 <!--<figure class="video_container">
@@ -13,7 +13,7 @@
 </figure>-->
 <!-- blank line -->
 
----
+<!------->
 
 ### Source sites: 
 * [NASA Mars News Site](https://mars.nasa.gov/news) with recent news items about Mars.
