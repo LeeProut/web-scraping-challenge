@@ -8,9 +8,9 @@
 ### Demo of web scraping: 
 
 <!-- blank line -->
-<figure class="video_container">
+<!--<figure class="video_container">
   <iframe src="https://youtu.be/TfDrQTBJvY8" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+</figure>-->
 <!-- blank line -->
 
 ---
