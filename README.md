@@ -8,6 +8,7 @@
 ### Web Scraping Demo
 
 View web scraping in action [here](https://www.youtube.com/watch?v=TfDrQTBJvY8). 
+
 ![YouTube video of web scraping](Missions_to_Mars/images/youtubevideo.png)
 
 ---
