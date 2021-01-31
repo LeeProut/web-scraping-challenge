@@ -3,7 +3,13 @@
 * creating an app to display the data retrieved using MongoDB with Flask
 * end user can easily retrieve the latest information with a simple click
 
-<!------->
+---
+
+### Web Scraping Demo
+
+View web scraping in action [here](https://www.youtube.com/watch?v=TfDrQTBJvY8). 
+
+---
 
 <!--### Demo of web scraping:-->
 
